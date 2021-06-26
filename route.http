@@ -1,0 +1,42 @@
+GET http://localhost:3011/users/
+
+
+#####
+
+POST http://localhost:3011/users/
+Content-Type: application/json
+
+{
+  "id": 5,
+  "name": "William",
+  "email": "william@gmail.com",
+  "password": "william123"
+}
+
+#####
+
+POST http://localhost:3011/login/
+Content-Type: application/json
+
+{    
+    "name": "jane",
+    "password": "jane123"
+}
+
+#####
+
+POST http://localhost:3011/users/
+Content-Type: application/json
+
+{
+  "id": 6,
+  "name": "Rose",
+  "email": "rose@gmail.com",
+  "password": "rose123"
+}
+
+
+#####
+
+GET http://localhost:3011/users/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImphbmUiLCJpYXQiOjE2MjQ3MjcyNTV9.AU4UEiPZfVS17ZRQfnxqMLrPkXtnesT9kFgJR1yHTBo
